@@ -1,6 +1,6 @@
 # Bem vindo ao teste para desenvolvedor frontend da Coobrastur.
 
-## Deverá ser utilizado a api publica do site: <a href="https://superheroapi.com/">Super Herois API</a>.
+## Deverá ser utilizado a api publica do site: [Super Herois API](https://superheroapi.com).
 ## O teste poderá ser realizado em Angular JS, Angular 2+ ou React
 
 ## Deverá ser criado um fork do repositório atual e após terminado enviar uma pull request pra esse repositório.
