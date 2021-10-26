@@ -6,6 +6,7 @@
 ## Deverá ser criado um fork do repositório atual e após terminado enviar uma pull request pra esse repositório.
 
 - Utilizar o versionamento GIT para desenvolvimento.
+- Utilizar orientação a objetos e classes para representar os dados mostrados.
 - Elaborar uma tela de login com validações de campo (required, null, undefined) contendo mensagem adequada de validação.
   Não é necessário criar uma autenticação verdadeira com request, só validação de campos mesmo e depois pode redirecionar pra página principal da aplicação.
 - Listar os herois com nome, uma breve descrição biográfica e opção de "ver detalhes".
