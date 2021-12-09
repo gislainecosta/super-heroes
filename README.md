@@ -1,7 +1,17 @@
 # Bem vindo ao teste para desenvolvedor frontend da Coobrastur.
 
+Este teste é para saber o nível de conhecimento do pretende ao cargo de desenvolvedor web frontend.
+Siga os passos abaixo com todas as instruções da forma que deverá ser realizado.
+
+Lembre sempre de tentar seguir os padrões de estruturas escrito nas documentações no site:  [Angular Documentacao](https://angular.io/docs).
+
+Qualquer duvida TÉCNICA sobre o site. Enviar email para wsilva@coobrastur.com.br
+
+Boa sorte!
+
+
 ## Deverá ser utilizado a api publica do site: [Super Herois API](https://superheroapi.com).
-## O teste poderá ser realizado em Angular JS, Angular 2+ ou React
+## O teste poderá ser realizado em Angular JS, Angular 2+.
 
 ## Deverá ser criado um fork do repositório atual e após terminado enviar uma pull request pra esse repositório.
 
