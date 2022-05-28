@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     --blue: #2111bf;
     --violet: #7e42af;
     --text: #000;
-    --grey: #efeaf3;
+    --grey: #a6a4a4;
   }
 
   * {
@@ -35,28 +35,13 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Chakra Petch', sans-serif;
     font-weight: 400;
     color: var(--text);
-
-    &:focus {
-      outline: none;
-    }
-  }
-
-  button {
-    border: 0 none;
-    outline: 0;
-
-    &:focus {
-      outline: none;
-    }
-  }
-
-  button, input {
     background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
   }
 
-  input {
-    border: 1px solid black;
-  }
 
   h1, h2, h3, h4, h5, h6, strong {
     font-weight: 600;
