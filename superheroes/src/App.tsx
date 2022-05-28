@@ -18,7 +18,7 @@ const ContainerApp = styled.div`
   background-position: center center;
   background-size: 100vw 100vh;
 
-   @media(min-width: 1024px) {
+  @media(min-width: 1024px) {
     background-image: url(${BackgDesktop});
   }
 `

@@ -2,9 +2,12 @@ import * as St from './styles';
 
 const Login = () => {
   return (
-    <St.LoginContainer>
-      Login
-    </St.LoginContainer>
+    <St.Container>
+      <St.Title>Login</St.Title>
+      <St.Input placeholder='E-mail' type='text'/>
+      <St.Input placeholder='Senha' type='text' />
+      <St.Button>Enviar</St.Button>
+    </St.Container>
   );
 }
 

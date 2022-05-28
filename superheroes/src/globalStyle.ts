@@ -41,14 +41,21 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  button, textarea, input {
+  button {
     border: 0 none;
     outline: 0;
-    background-color: transparent;
 
     &:focus {
       outline: none;
     }
+  }
+
+  button, input {
+    background-color: transparent;
+  }
+
+  input {
+    border: 1px solid black;
   }
 
   h1, h2, h3, h4, h5, h6, strong {
