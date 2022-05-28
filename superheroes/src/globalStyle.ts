@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
   body, button, textarea, input {
     border: 0 none;
     outline: 0;
-    font-family: 'Gemunu Libre', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     font-weight: 400;
     color: var(--text);
 
