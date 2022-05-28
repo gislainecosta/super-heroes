@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Search from '../../components/Search';
 import * as St from './styles';
 
 const Home = () => {
@@ -13,13 +14,7 @@ const Home = () => {
 
   return (
     <St.HomeContainer>
-      <St.SearchSection>
-        <St.SearchTitle>Pesquise um Super-herói ou um vilão</St.SearchTitle>
-        <St.SearchInput
-          placeholder='Insira um nome'
-          type='text'
-        />
-      </St.SearchSection>
+      <Search />
     </St.HomeContainer>
   );
 }

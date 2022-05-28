@@ -9,23 +9,11 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-`
 
-export const SearchSection = styled.section`
-  background-color: white;
-  width: 90%;
-  box-shadow: 6px 6px 0px 0px rgb(0 0 0);
-  margin-top: 1rem;
-  padding: 2% 5%;
-  display: flex;
-  flex-direction: column;
-`
-export const SearchTitle = styled.p`
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.12rem;
-`
-export const SearchInput = styled.input`
-  border-bottom: 1px solid var(--grey);
-  margin: 4% 0 2% 0;
-`
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    padding: 1.4% 0;
+  }
+`;
