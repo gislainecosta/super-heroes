@@ -5,9 +5,10 @@ const Search = (props:any) => {
     <St.SearchContainer>
       <St.SearchTitle>Pesquise um Super-herói ou um vilão</St.SearchTitle>
       <St.SearchInput
-        placeholder='Digite ao menos 3 letras'
+        placeholder='Nome'
         type='text'
         onChange={props.change}
+        onKeyPress={props.pressEnter}
       />
 
       <St.Button onClick={props.search}>Buscar</St.Button>

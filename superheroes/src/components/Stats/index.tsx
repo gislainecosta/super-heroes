@@ -58,7 +58,6 @@ const Stats = (props:any) => {
     },
   };
 
-  console.log("PROPS DA STAT", props.dataHero)
   return (
     <St.StatsContainer>
       <Radar

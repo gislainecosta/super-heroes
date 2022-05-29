@@ -62,11 +62,17 @@ const Home = () => {
 		setLoadingIsOpen(false)
 	}
 
+	const onKeyFunction = (e:any) => {
+		if (e.key === "Enter") {
+			e.preventDefault();
+			searchHeroes(heroName)
+		}
+	}
+
 	const searchHeroes = async (work:string) => {
 		setIsSearch(true)
 		const heroesList: any = []
 		setLoadingIsOpen(true)
-		
 		
 		try {
 			const response = await axios.post(`https://superheroapi.com/api/5496152487075803/search/${work}`);
@@ -119,7 +125,7 @@ const Home = () => {
   return (
     <St.HomeContainer>
 			<St.HomeContent>
-				<Search search={() => searchHeroes(heroName)} change={handleChange} />
+				<Search pressEnter={onKeyFunction} search={() => searchHeroes(heroName)} change={handleChange} />
 				<St.CardsContainer>
 					{ listCards }       
 				</St.CardsContainer>

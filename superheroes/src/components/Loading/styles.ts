@@ -10,12 +10,27 @@ export const LoadingContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: #ffffffb1;
 `
 export const Loading = styled.img`
   width: 70vw;
 
   @media (min-width: 1024px) {
-    width: 36vw;
+    width: 30vw;
+  }
+`;
+
+export const Title = styled.p`
+  margin-top: 6%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--red);
+  text-shadow: 2px 2px black;
+
+  @media (min-width: 1024px) {
+    margin-top: 2%;
+    font-size: 2.6rem;
   }
 `;

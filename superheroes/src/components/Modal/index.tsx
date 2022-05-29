@@ -5,8 +5,7 @@ import Stats from '../Stats';
 import * as St from './styles';
 
 const Modal = (props:any) => {
-  const [tabActive, setTabActive] = useState<string>('bio')
-  console.log(props.hero)
+  const [tabActive, setTabActive] = useState<string>('stat')
   const hero = props.hero
 
   let contentTab

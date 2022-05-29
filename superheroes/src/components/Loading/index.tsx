@@ -7,6 +7,7 @@ const Loading = () => {
   return (
     <St.LoadingContainer>
       <St.Loading src={LoadingImg} alt="Loading"/>
+      <St.Title>Aguarde um momento</St.Title>
     </St.LoadingContainer>
   );
 }
