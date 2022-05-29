@@ -1,82 +1,42 @@
 import { useState } from 'react';
-import { Hero } from '../../modules/types';
 import Appearance from '../Appearance';
 import Biography from '../Biography';
 import Stats from '../Stats';
 import * as St from './styles';
 
-const Modal = () => {
-  const [tabActive, setTabActive] = useState<string>('appearance')
-  const hero = useState<Hero>(
-    {
-      "id": "64",
-      "name": "Batgirl",
-      "powerstats": {
-        "intelligence": "null",
-        "strength": "27",
-        "speed": "null",
-        "durability": "null",
-        "power": "null",
-        "combat": "null"
-      },
-      "biography": {
-        "full-name": "Mary Elizabeth Kane",
-        "alter-egos": "Hawkfire",
-        "aliases": [
-          "Bette Kane",
-          "Bat-Girl"
-        ],
-        "place-of-birth": "-",
-        "first-appearance": "Batman #139",
-        "publisher": "Hawkfire",
-        "alignment": "good"
-      },
-      "appearance": {
-        "gender": "Female",
-        "race": "null",
-        "height": [
-          "-",
-          "0 cm"
-        ],
-        "weight": [
-          "- lb",
-          "0 kg"
-        ],
-        "eye-color": "-",
-        "hair-color": "-"
-      },
-      "image": "https:\/\/www.superherodb.com\/pictures2\/portraits\/10\/100\/638.jpg"
-    }
-  )
+const Modal = (props:any) => {
+  const [tabActive, setTabActive] = useState<string>('bio')
+  console.log(props.hero)
+  const hero = props.hero
 
   let contentTab
 
   switch (tabActive) {
     case 'appearance':
-      contentTab = <Appearance />
+      contentTab = <Appearance dataHero={hero.appearance}/>
       break;
     case 'bio':
-      contentTab = <Biography />
+      contentTab = <Biography dataHero={hero.biography}/>
       break;
     default:
-      contentTab = <Stats />
+      contentTab = <Stats dataHero={hero.powerstats}/>
   }
 
   return (
     <St.ModalContainer>
       <St.Modal>
         <St.ModalHeader>
-          <St.Image src={hero[0].image} alt=""/>
-          <St.Button>X</St.Button>
-          <St.HeroName>{hero[0].name}</St.HeroName>
+          <St.Image src={hero.image} alt=""/>
+          <St.Button onClick={props.close}>X</St.Button>
+          <St.HeroName>{hero.name}</St.HeroName>
         </St.ModalHeader>
         
         
         <St.ModalContent>
           <St.TabsController>
-            <p>Estatísticas</p>
-            <p>Biografia</p>
-            <p>Aparência</p>
+            <St.TabText onClick={() => setTabActive('stat')}>Estatísticas</St.TabText>
+            <St.TabText onClick={() => setTabActive('bio')}>Biografia</St.TabText>
+            <St.TabText onClick={() => setTabActive('appearance')}>Aparência</St.TabText>
           </St.TabsController>
 
           <St.TabsContent>

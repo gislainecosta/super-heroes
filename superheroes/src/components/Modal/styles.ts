@@ -18,8 +18,9 @@ export const ModalContainer = styled.div`
     #ffc745a2 1px,
     #fcb0009c 0,
     #fcb0008e 50%
-  );
+  )
 `
+
 export const Modal = styled.section`
   background-color: #ffffffff;
   box-shadow: 12px 12px 0px 0px rgb(0 0 0);
@@ -34,11 +35,13 @@ export const Modal = styled.section`
     flex-direction: row;
     padding: 1rem 8rem 1rem 1rem;
   }
-`;
+`
+
 export const ModalHeader = styled.section`
   position: relative;
   text-align: center;
 `
+
 export const Image = styled.img`
   width: 80%;
   margin: 0 auto;
@@ -46,7 +49,8 @@ export const Image = styled.img`
   @media (min-width: 1024px) {
     width: 20rem;
   }
-`;
+`
+
 export const HeroName = styled.p`
   font-weight: bold;
   text-transform: uppercase;
@@ -58,13 +62,15 @@ export const HeroName = styled.p`
     margin: 4% 0 2% 0;
   }
 `
+
 export const ModalContent = styled.section`
   width: 100%;
 
   @media (min-width: 1024px) {
     margin-left: 5%;
   }
-`;
+`
+
 export const TabsController = styled.section`
   display: flex;
   font-weight: bold;
@@ -73,9 +79,15 @@ export const TabsController = styled.section`
   justify-content: space-between;
   padding: 0 2% 2% 2%;
 `
+
 export const TabsContent = styled.section`
   padding: 1rem;
 `
+
+export const TabText = styled.p`
+  cursor: pointer;
+`
+
 export const Button = styled.button`
   width: 3rem;
   height: 3rem;
@@ -103,4 +115,4 @@ export const Button = styled.button`
       transform: scale(0.8);
     }
   }
-`;
+`
