@@ -58,7 +58,7 @@ const Home = () => {
 				console.log(e)
 			}
 		}
-		
+
 		setHeroes([])
 		setHeroes(heroesList)
 		setLoadingIsOpen(false)
@@ -80,8 +80,6 @@ const Home = () => {
 			const response = await axios.post(`https://superheroapi.com/api/5496152487075803/search/${work}`);
 			
 			const heroesData = response.data.results
-
-			console.log("DADOS DO BACK DE HERÓIS", heroesData)
 			
 			for (let i = 0; i < heroesData.length; i++) {
 				heroesList.push(new Hero(
