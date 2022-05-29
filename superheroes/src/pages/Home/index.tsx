@@ -10,7 +10,7 @@ import * as St from './styles';
 const Home = () => {
   const navigate = useNavigate();
   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
-	const [loadingIsOpen, setLoadingIsOpen] = useState<boolean>(true);
+	const [loadingIsOpen, setLoadingIsOpen] = useState<boolean>(false);
 	
   const heroes = useState<Hero[]>([
     {

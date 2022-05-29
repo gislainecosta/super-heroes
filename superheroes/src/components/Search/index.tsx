@@ -8,6 +8,8 @@ const Search = () => {
         placeholder='Digite ao menos 3 letras'
         type='text'
       />
+
+      <St.Button>Buscar</St.Button>
     </St.SearchContainer>
   );
 }

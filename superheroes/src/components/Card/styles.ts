@@ -28,16 +28,16 @@ export const CardButton = styled.button`
 
   @media (min-width: 1024px) {
     margin-top: 4%;
-  }
 
-  &:hover {
-    transform: scale(1.1);
-  }
+    &:hover {
+      transform: scale(1.1);
+    }
 
-  &:active {
-    transform: scale(0.8);
+    &:active {
+      transform: scale(0.8);
+    }
   }
-`
+`;
 export const HeroName = styled.p`
   font-weight: bold;
   text-transform: uppercase;
