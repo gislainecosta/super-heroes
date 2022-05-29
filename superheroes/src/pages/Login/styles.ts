@@ -38,7 +38,7 @@ flex-direction: column;
     grid-template-rows: repeat(2, 1fr);
     margin-bottom: 2rem;
   }
-`;
+`
 export const Input = styled.input`
   margin-bottom: 0.5rem;
   padding: 2%;
@@ -55,7 +55,7 @@ export const Input = styled.input`
   &:valid {
     border: 1px solid var(--green);
   }
-`;
+`
 export const Button = styled.button`
   margin-bottom: 2rem;
   background-color: var(--red);
