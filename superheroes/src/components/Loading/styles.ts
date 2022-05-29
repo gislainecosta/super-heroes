@@ -14,4 +14,8 @@ export const LoadingContainer = styled.div`
 `
 export const Loading = styled.img`
   width: 70vw;
-`
+
+  @media (min-width: 1024px) {
+    width: 36vw;
+  }
+`;

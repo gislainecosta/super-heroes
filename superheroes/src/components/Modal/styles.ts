@@ -29,7 +29,12 @@ export const Modal = styled.section`
   align-items: center;
   padding: 1rem;
   max-height: 94vh;
-`
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    padding: 1rem 8rem 1rem 1rem;
+  }
+`;
 export const ModalHeader = styled.section`
   position: relative;
   text-align: center;
@@ -37,7 +42,11 @@ export const ModalHeader = styled.section`
 export const Image = styled.img`
   width: 80%;
   margin: 0 auto;
-`
+
+  @media (min-width: 1024px) {
+    width: 20rem;
+  }
+`;
 export const HeroName = styled.p`
   font-weight: bold;
   text-transform: uppercase;
@@ -51,7 +60,11 @@ export const HeroName = styled.p`
 `
 export const ModalContent = styled.section`
   width: 100%;
-`
+
+  @media (min-width: 1024px) {
+    margin-left: 5%;
+  }
+`;
 export const TabsController = styled.section`
   display: flex;
   font-weight: bold;
@@ -72,19 +85,22 @@ export const Button = styled.button`
   border: 2px solid black;
   position: absolute;
   top: -2rem;
-  right: -2rem;
   z-index: 3;
   font-size: 1.8rem;
 
+  @media (max-width: 1024px) {
+    right: -2rem;
+  }
+
   @media (min-width: 1024px) {
-    margin-top: 4%;
-  }
+    left: -2rem;
 
-  &:hover {
-    transform: scale(1.1);
-  }
+    &:hover {
+      transform: scale(1.1);
+    }
 
-  &:active {
-    transform: scale(0.8);
+    &:active {
+      transform: scale(0.8);
+    }
   }
-`
+`;

@@ -63,7 +63,6 @@ export const ChartData = {
   ],
 };
 export const ChartOptions = {
-  responsive: true,
   scale: {
     ticks: {
       display: false,

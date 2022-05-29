@@ -13,6 +13,8 @@ export const Detail = styled.article`
   display: flex;
   align-items: center;
   margin-top: 8%;
+  width: 100%;
+  justify-content: center;
 
   @media (min-width: 1024px) {
   }
@@ -23,5 +25,12 @@ export const Icon = styled.img`
   margin-right: 4%;
 
   @media (min-width: 1024px) {
+    width: 4rem;
+  }
+`;
+
+export const Text = styled.p`
+  @media (min-width: 1024px) {
+    font-size: 1.1rem;
   }
 `;

@@ -51,32 +51,32 @@ const Appearance = () => {
     <St.AppearanceContainer>
       <St.Detail>
         <St.Icon src={IconGender} alt="Gênero" />
-        <p>{heroApparance.gender}</p>
+        <St.Text>{heroApparance.gender}</St.Text>
       </St.Detail>
       
       <St.Detail>
         <St.Icon src={IconRace} alt="Raça" />
-        <p>{heroApparance.race}</p>
+        <St.Text>{heroApparance.race}</St.Text>
       </St.Detail>
       
       <St.Detail>
         <St.Icon src={IconHeight} alt="Altura" />
-        <p>{heroApparance.height[1]}</p>
+        <St.Text>{heroApparance.height[1]}</St.Text>
       </St.Detail>
       
       <St.Detail>
         <St.Icon src={IconWeight} alt="Peso" />
-        <p>{heroApparance.weight[1]}</p>
+        <St.Text>{heroApparance.weight[1]}</St.Text>
       </St.Detail>
       
       <St.Detail>
         <St.Icon src={IconEye} alt="Cor dos olhos" />
-        <p>{heroApparance['eye-color']}</p>
+        <St.Text>{heroApparance['eye-color']}</St.Text>
       </St.Detail>
 
       <St.Detail>
         <St.Icon src={IconHair} alt="Cor do cabelo" />
-        <p>{heroApparance['hair-color']}</p>
+        <St.Text>{heroApparance['hair-color']}</St.Text>
       </St.Detail>
     </St.AppearanceContainer>
   );

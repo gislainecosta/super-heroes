@@ -37,19 +37,19 @@ const Biography = () => {
   
   return (
     <St.BioContainer>
-      <p><b>{heroBio.alignment === 'good' ? 'Herói' : 'Vilão'}</b></p>
+      <St.Text><b>{heroBio.alignment === 'good' ? 'Herói' : 'Vilão'}</b></St.Text>
       
-      <p><b>Nome Completo:</b> {heroBio['full-name']}</p>
+      <St.Text><b>Nome Completo:</b> {heroBio['full-name']}</St.Text>
       
-      <p><b>Alter-Ego:</b> {heroBio['alter-egos']}</p>
+      <St.Text><b>Alter-Ego:</b> {heroBio['alter-egos']}</St.Text>
       
-      <p><b>Aliados:</b> {heroBio.aliases.join(', ')}</p>
+      <St.Text><b>Aliados:</b> {heroBio.aliases.join(', ')}</St.Text>
       
-      <p><b>Local de Nascimento:</b> {heroBio['place-of-birth']}</p>
+      <St.Text><b>Local de Nascimento:</b> {heroBio['place-of-birth']}</St.Text>
       
-      <p><b>Primeira Aparição:</b> {heroBio['first-appearance']}</p>
+      <St.Text><b>Primeira Aparição:</b> {heroBio['first-appearance']}</St.Text>
       
-      <p><b>Editora:</b> {heroBio.publisher}</p>
+      <St.Text><b>Editora:</b> {heroBio.publisher}</St.Text>
       
     </St.BioContainer>
   );
