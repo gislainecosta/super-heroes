@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import * as St from './styles';
-import { LoginForm } from '../../modules/types';
+import { LoginForm } from '../../models/interfaces';
 import { useState } from 'react';
 
 const Login = () => {

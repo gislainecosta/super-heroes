@@ -31,7 +31,7 @@ export interface Appearance {
   "hair-color": string;
 }
 
-export interface Hero {
+export interface HeroDTO {
   id: string;
   name: string;
   biography: HeroBiography;

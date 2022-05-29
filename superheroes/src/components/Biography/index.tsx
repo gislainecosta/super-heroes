@@ -1,4 +1,4 @@
-import { HeroBiography } from '../../modules/types';
+import { HeroBiography } from '../../models/interfaces';
 import * as St from './styles';
 
 const Biography = (props:any) => {

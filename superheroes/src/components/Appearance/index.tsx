@@ -1,5 +1,5 @@
 import * as St from './styles';
-import { Appearance as ApparenceInterface } from '../../modules/types';
+import { Appearance as ApparenceInterface } from '../../models/interfaces';
 import IconWeight from '../../images/weight.png';
 import IconEye from '../../images/eye.png';
 import IconGender from '../../images/gender.png';

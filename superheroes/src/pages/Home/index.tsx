@@ -5,14 +5,15 @@ import Card from '../../components/Card';
 import Loading from '../../components/Loading';
 import Modal from '../../components/Modal';
 import Search from '../../components/Search';
-import { Hero } from '../../modules/types';
+import { HeroDTO } from '../../models/interfaces';
+import Hero from '../../models/classes';
 import * as St from './styles';
 
 const Home = () => {
   const navigate = useNavigate();
   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
 	const [loadingIsOpen, setLoadingIsOpen] = useState<boolean>(false);
-	const [heroes, setHeroes] = useState<Hero[]>([]);
+	const [heroes, setHeroes] = useState<HeroDTO[]>([]);
 	const [isSearch, setIsSearch] = useState<boolean>(false);
 	const [heroName, setHeroName] = useState<string>('')
 	const [heroDetail, setHeroDetail] = useState<object>([]);
@@ -42,22 +43,23 @@ const Home = () => {
 		for (let i = 0; i < idList.length; i++) {
 			try {
 				const response = await axios.post(`https://superheroapi.com/api/5496152487075803/${idList[i]}`);
-
-				const heroData = {
-					id: response.data.id,
-					name: response.data.name,
-					biography: response.data.biography,
-					powerstats: response.data.powerstats,
-					appearance: response.data.appearance,
-					image: response.data.image.url
-				}
-				heroesList.push(heroData)
+				const heroesData = response.data
+				
+				heroesList.push(new Hero(
+					heroesData.id,
+					heroesData.name,
+					heroesData.biography,
+					heroesData.powerstats,
+					heroesData.appearance,
+					heroesData.image.url
+				))
 
 			} catch (e) {
 				console.log(e)
 			}
 		}
-
+		
+		setHeroes([])
 		setHeroes(heroesList)
 		setLoadingIsOpen(false)
 	}
@@ -79,20 +81,20 @@ const Home = () => {
 			
 			const heroesData = response.data.results
 
+			console.log("DADOS DO BACK DE HERÓIS", heroesData)
+			
 			for (let i = 0; i < heroesData.length; i++) {
-				
-				const heroData = {
-					id: heroesData[i].id,
-					name: heroesData[i].name,
-					biography: heroesData[i].biography,
-					powerstats: heroesData[i].powerstats,
-					appearance: heroesData[i].appearance,
-					image: heroesData[i].image.url
-				}
-				heroesList.push(heroData)
+				heroesList.push(new Hero(
+					heroesData[i].id,
+					heroesData[i].name,
+					heroesData[i].biography,
+					heroesData[i].powerstats,
+					heroesData[i].appearance,
+					heroesData[i].image.url
+				))
 			}
-			
-			
+
+			setHeroes([])
 			setHeroes(heroesList)
 		} catch (e) {
 			console.log(e)

@@ -1,5 +1,5 @@
 import { MouseEventHandler } from 'react';
-import { CardProps } from '../../modules/types';
+import { CardProps } from '../../models/interfaces';
 import * as St from './styles';
 
 interface Props extends CardProps {

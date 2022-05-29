@@ -1,6 +1,6 @@
 import { Radar } from 'react-chartjs-2';
 import * as St from './styles';
-import { Powerstats } from './../../modules/types';
+import { Powerstats } from '../../models/interfaces';
 
 const Stats = (props:any) => {
   let heroStats: Powerstats = props.dataHero;
